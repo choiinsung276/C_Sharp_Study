@@ -40,7 +40,7 @@ public int IpBinarySearch(List<ServerObject> servers, IPAddress target)
 
         }
 ```
-
+- 이진탐색에 쓰이는 크기비교 <, > 를 CompareTo 라는 바이트로 변환하여 아이피를 비교하는 함수 이용
 ```C#
 // b2가 크면 1
         public int CompareTo(Byte[] b1, Byte[] b2)
@@ -124,6 +124,7 @@ public List<ServerObject> Merge(List<ServerObject> left, List<ServerObject> righ
 - C#에서 List의 find 함수 사용 예 
 ```C#
 # 찾고자하는 IPAddress ServerIp = new IPAddress~~~~~;
+# ParentServerObject parentServerObject = new  ParentServerObject ~~~~~~~~ List안에 수많은 ServerObject들이있다고 가정
 ServerObject targetServer = parentServerObject.Servers.Find(x => x.Ip.Equals(ServerIp);
 ```
 - O(n) 임 
